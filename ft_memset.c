@@ -6,7 +6,7 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	i = 0;
 	while (i < len)
-		((char *)b)[i++] = c;
+		((unsigned char *)b)[i++] = (unsigned char)c;
 	return (b);
 }
 
@@ -14,15 +14,13 @@ void	*ft_memset(void *b, int c, size_t len)
 #include <stdio.h>
 int	main(void)
 {
-	char	mem[256] = {0};
+	char	str[10] = "abcdefghi";
+	int	i;
 
-	ft_memset(mem, 97, 5);
-	printf("%d\n", (int)mem[0]);
-	printf("%d\n", (int)mem[1]);
-	printf("%d\n", (int)mem[2]);
-	printf("%d\n", (int)mem[3]);
-	printf("%d\n", (int)mem[4]);
-	printf("%d\n", (int)mem[5]);
-	printf("%d\n", (int)mem[6]);
+	i = 0;
+	ft_memset(str, 'A', 5);
+	while (i < 9)
+		printf("%c\n", str[i++]);
+	return (0);
 }
 */

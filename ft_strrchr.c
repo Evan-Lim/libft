@@ -1,18 +1,20 @@
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
 
 	i = 0;
 	while (s[i])
-	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
 		i++;
-	}
 	if (s[i] == (char)c)
 		return ((char *)&s[i]);
+	while (i > 0)
+	{
+		i--;
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+	}
 	return (NULL);
 }
 
@@ -21,10 +23,10 @@ char	*ft_strchr(const char *s, int c)
 int	main(void)
 {
 	char	str[] = "42 Penang Piscine";
-	char	*chr_res = ft_strchr(str, 'P');
+	char	*rchr_res = ft_strrchr(str, 'P');
 
-	if (chr_res)
-		printf("%s\n", chr_res);
+	if (rchr_res)
+		printf("%s\n", rchr_res);
 	return (0);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 08:14:39 by elim-hon          #+#    #+#             */
-/*   Updated: 2026/09/21 08:14:40 by elim-hon         ###   ########.fr       */
+/*   Updated: 2026/09/21 11:06:59 by elim-hon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 }
 */
 
-int	ft_lstsize(t_list *lst)
+unsigned int	ft_lstsize(t_list *lst)
 {
-	int	count;
+	unsigned int	count;
 
 	count = 0;
 	while (lst)

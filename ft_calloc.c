@@ -6,7 +6,7 @@
 /*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 08:13:00 by elim-hon          #+#    #+#             */
-/*   Updated: 2026/09/21 08:13:02 by elim-hon         ###   ########.fr       */
+/*   Updated: 2026/09/21 12:59:26 by elim-hon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ void	*ft_calloc(size_t count, size_t size)
 	if (count != 0 && size > SIZE_MAX / count)
 		return (NULL);
 	total = count * size;
+	if (!total)
+		total = 1;
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 08:16:32 by elim-hon          #+#    #+#             */
-/*   Updated: 2026/09/21 08:20:21 by elim-hon         ###   ########.fr       */
+/*   Updated: 2026/09/21 12:56:01 by elim-hon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	while (src[src_len])
 		src_len++;
-	while (dst[dst_len] && dst_len < dstsize)
+	while (dst_len < dstsize && dst[dst_len])
 		dst_len++;
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);

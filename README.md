@@ -58,12 +58,12 @@ AI was used to help structure this README and to re
 
 ### Character Conversion and Description Functions
 
-`ft_isalpha`: `int ft_isalpha(int c);`
+`ft_isalpha`: `int ft_isalpha(int c);` <br />
 Checks if the given character `c` is an alphabetic letter (A-Z or a-z). Returns 1 if true, 0 otherwise.
 
-`ft_isdigit`: `int ft_isdigit(int c);`
+`ft_isdigit`: `int ft_isdigit(int c);` <br />
 Checks if the given character `c` is a decimal digit (0-9). Returns 1 if true, 0 otherwise.
 
-`ft_isalnum`: `int ft_isalnum(int c);`
+`ft_isalnum`: `int ft_isalnum(int c);` <br />
 Checks
 

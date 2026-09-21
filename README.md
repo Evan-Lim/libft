@@ -65,5 +65,5 @@ Checks if the given character `c` is an alphabetic letter (A-Z or a-z). Returns 
 Checks if the given character `c` is a decimal digit (0-9). Returns 1 if true, 0 otherwise.
 
 `ft_isalnum`: `int ft_isalnum(int c);` <br />
-Checks
+Checks if the 
 

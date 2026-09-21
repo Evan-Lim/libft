@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/21 08:16:32 by elim-hon          #+#    #+#             */
+/*   Updated: 2026/09/21 08:20:21 by elim-hon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
@@ -21,11 +33,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	dst[dst_len + i] = '\0';
-	return (dst_len + src_len); 
+	return (dst_len + src_len);
 }
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
 	char	src[] = "DEFGHI";

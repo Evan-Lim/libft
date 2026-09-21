@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/21 08:12:45 by elim-hon          #+#    #+#             */
+/*   Updated: 2026/09/21 08:19:23 by elim-hon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *str)
 {
 	size_t	i;
-	int	sign;
-	int	num;
+	int		sign;
+	int		num;
 
 	i = 0;
 	sign = 1;
@@ -27,6 +39,7 @@ int	ft_atoi(const char *str)
 
 /*
 #include <stdio.h>
+
 int	main(int argc, char **argv)
 {
 	printf("ft_atoi: %d | atoi: %d\n", ft_atoi(argv[1]), atoi(argv[1]));

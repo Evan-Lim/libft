@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: elim-hon <elim-hon@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/21 08:16:17 by elim-hon          #+#    #+#             */
+/*   Updated: 2026/09/21 08:20:08 by elim-hon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 /*
@@ -11,7 +23,7 @@ void	map_func(unsigned int i, char *c)
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
-	
+
 	if (!s || !f)
 		return ;
 	i = 0;
@@ -24,6 +36,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
 	char	str[] = "hello world";

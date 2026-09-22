@@ -52,7 +52,8 @@ The library is compiled with `cc -Wall -Wextra -Werror` and uses `ar` to create 
 
 ### AI Usage
 
-AI was used to help structure this README and to re
+AI was used to help structure this README and to review edge cases in functions.
+All function implementations were written manually, tested with custom test programs, and verified against the expected behavior described in the man pages.
 
 ## Library Description
 
